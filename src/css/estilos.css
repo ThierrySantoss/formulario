@@ -1,0 +1,117 @@
+ html {
+    height: 100vh;
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-size: contain;
+}
+
+body {
+    font-family: "Roboto", serif;
+}
+
+.principal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .titulo-texto {
+    width: 300px;
+    height: 111px;
+}
+
+.principal .titulo-texto .titulo {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 11px;
+}
+
+.principal .titulo-texto .texto {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.formulario {
+    width: 340px;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.formulario .input-nome,
+.formulario .input-email,
+.formulario .input-telefone {
+    height: 35px;
+    width: 300px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+
+}
+
+.formulario .input-mensagem {
+    height: 100px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-top: 8px;
+    margin-bottom: 15px;
+    resize: none;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+
+.formulario .texto-obrigatorio {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.formulario .enviar {
+    height: 42px;
+    border-radius: 5px;
+    background-color: #3CCC87;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    cursor: pointer;
+}
+
+/* Quando o Campo for Obrigatorio */
+
+.formulario .error-obrigatorio {
+    font-weight: 400;
+    font-size: 8px;
+    color: #F52E2E;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.formulario .input-nome.obrigatorio,
+.formulario .input-email.obrigatorio,
+.formulario .input-telefone.obrigatorio,
+.formulario .input-mensagem.obrigatorio {
+    margin-bottom: 0;
+    border-color: #F52E2E;
+}
+
+/* Campo ok */
+
+.formulario .input-nome.campoVerde,
+.formulario .input-email.campoVerde,
+.formulario .input-telefone.campoVerde,
+.formulario .input-mensagem.campoVerde {
+    border-color: #00C22B;
+}

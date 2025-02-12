@@ -1,0 +1,12 @@
+@media(max-width: 610px) {
+    .principal {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .principal .titulo-texto {
+        margin-bottom: 30px;
+    }
+
+}
